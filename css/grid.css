@@ -149,6 +149,7 @@
 
 .container > div.content > div.first-problems > div.problem-header {
     grid-area: problem-header;
+    align-content: flex-end;
 }
 
 .container > div.content > div.first-problems > div.problem-paragraphs {
@@ -329,14 +330,10 @@
     }
 
     .container > div.content > div.challenges {
-        grid-template-rows: 1fr;
-        row-gap: 1rem;
         padding-right: 0rem;
     }
 
     .container > div.content > div.future-prospects {
-        grid-template-rows: 1fr;
-        row-gap:1rem;
         padding-right: 0rem;
     }
 
@@ -478,7 +475,7 @@
 
     .container > div.content > div.development-process {
         padding-right: 0rem;
-        margin-top: 4rem;
+        padding-top: 4rem;
         margin-bottom: 0rem;
     }
 
@@ -540,4 +537,5 @@
         padding: 0;
         letter-spacing: -.5rem;
     }
+
 }

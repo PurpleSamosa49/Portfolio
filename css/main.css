@@ -29,6 +29,8 @@ h2 {
     font-weight: 600;
     letter-spacing: 0.04rem;
     margin: 0rem;
+    align-self: flex-end;
+    padding-bottom: 1rem;
 }
 
 h3 {
