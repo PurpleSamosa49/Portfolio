@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gordon Yen Portfolio</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/font.css">
+    </head>
+
+    <body>
+        <div class="container showcase-template">
+
+            <div class="header">
+                <div class="logo"><a href="index.html" class="header_logo">Gordon Yen</a></div>
+                <div class="header_tag tagline">Portfolio __ HudabesMusic</div>
+
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" class="link">Projects</a></li>
+                            <li><a href="about.html" class="link">Information</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/gordon-yen-5ab8562a9/" class="link">__LinkedIn</a>
+                </div>
+            </div>
+            
+            <div class="content">
+
+                <div class="hero">
+                    <h1 class="hudabes">Hudabes Music</h1>
+                </div>
+
+                <div class="hero-image">
+                    <img src="img/Hudabes_Banner.png" alt="Hudabes Music Start Screen" width="1920" height="700">
+                </div>
+
+                <div class="overview">
+                    <h2>Overview</h2>
+                    <p>Hudabes Music is a multiplayer DJ game in which two players compete to see how fast they can complete given inputs within 1 minute and aim for the higher score. Players must correctly interact with the multiple inputs indicated on-screen on their physical DJ board to progress through the game and compete with each other to win the crowd over. </p>
+                    <p>This is a four person school project. We took inspiration from the Bop-it toy, which involves players interacting with various inputs such as twisting cranks, spinning wheels, and pressing buttons to progress the game, and arcade games such as Dance Dance Revolution and Water Gun games, where two players must compete against each other to win. By combining the multiplayer and competitive aspects of Type racer and arcade games, and the multiple inputs of Bop-It, we landed on a DJ theme for the project. This helps to enhance the project's engagement and playfulness.</p>
+                </div>
+
+                <div class="project-notes">
+                    <div>
+                        <h3>Role</h3>
+                        <p>Back-end Developer</p>
+                    </div>
+                    <div>
+                        <h3>Skills</h3>
+                        <ul>
+                            <li>Processing</li>
+                            <li>Java</li>
+                            <li>Arduino</li>
+                        </ul>
+                    </div>  
+                </div>
+
+                <div class="wireframes">
+                    <img src="img/HudabesPrototype.jpg" alt="Hudabes Prototype Game Boards and Circuitry Design" width="1920" height="1080">
+                </div>
+
+                <div class="first-iteration">
+                    <h2>First Iteration</h2>
+                    <p>In the initial phase of development, our first goal was to create a functional protoype. We decided during this phase to use slider, rotation and touch sensors. The goal we had set for the game at this time was to simply get more points than the other player during this time limit. While my groupmates worked on the hardware such as wiring and creating the controllers, I spent the majority of that time developing the code that will establish communication between Processing and the Arduino.</p>
+                </div>
+
+                <div class="first-problems">
+                    <div class="problem-header">
+                        <h2>Problems</h2>
+                    </div>
+                    <div class="problem-paragraphs">
+                        <p>In the original proposal, we had wanted to create a physical progress bar using LED lights, but because of the challenges we encountered and time constraints, we decided to drop that idea in favour of polishing up the existing features. Also, We had planned to only use one arduino board for both controllers, but we had trouble implementing that properly, so the prototype only had one controller working properly.</p>
+                        <p>One of the biggest changes to the interface will be the way in which pollen levels are displayed. The levels of pollen were not given in a quantitative measurement like grains per cubic metre, they are measured on a scale of 0-5: 0 being little to no pollen in the air, and 5 being extremely high pollen levels. So, the specific measurements are omitted, and the line graph is redundant, making the interface a lot more simple.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="development-process">
+                    <h2>Development Process</h2>
+                    <p>Going into the development phase, our prototype was already working fairly well. Our group used this time to properly implement the second game controller, and polish up the game as well as we could. We figured out that it would much more efficient and simpler to simply use two arduino boards, one for each controller, and have them both communicate with Processing simultaneously. While my groupmates focused on finalizing the animation and making the game controllers more aesthetically pleasing, I focused on tweaking and polishing up the code so that the game reacts more consistently and smoothly. We decided during this phase that, for the sake of simplicity, the game's goal would simply to reach 10 points before your opponent. </p>
+                </div> 
+
+                <div class="challenges">
+                    <h2>Challenges</h2>
+                    <p>The biggest challenge of this project was getting Processiong to properly communicate with the arduino boards. We had to spend a lot of time trying to troubleshoot and tweaking the values for reading the sensors and figuring out the parsing logic in processing. Working with an arduino was new for me, so learning how to do this while keeping our time limits in mind made this difficult. </p>
+                </div>
+
+                <div class="demos">
+                    
+                    <video loop autoplay muted class="video">
+                        <source src="video/Hudabes Demo.mp4" type="video/mp4" alt="Hudabes Demo of Gameplay and Board Circuitry">
+                        Your browser does not support the video tag.
+                    </video>
+          
+                </div>
+
+                <div class="future-prospects">
+                    <h2>Future Prospects</h2>
+                    <p>If we had more time, I would have liked to put a bit more thought and effort into making the gameplay more nuanced and interesting. When playing with it initially it is fun, over time it can get a little stale. Adding more depth to the gameplay, not necessarily through adding more sensors but maybe having prompts with multiple sensors, or having the prompts for the slider sensor be more precise could add some more depth. Adding features like a combo feature and some more direct interaction between players can also add some variety in the gameplay as well.</p>
+                </div>
+
+                <div class="summary">
+                    <h2>Summary</h2>
+                    <p>For this project, I mostly worked on the code that relates to the communication between the two Arduino boards and sensors with the computer, and the logic behind how processing registers an input for the slider and rotation sensor. While we were able to figure everything out eventually, I think we should have reached out to the teaching staff for help sooner so that we would have more time to flush out other aspects of our project. Ultimately though, I believe our group was able to make an engaging and successful end project with a decent level of replayability. 
+</p>
+                </div>
+
+            <div class="footer">
+                <p><a href="pollenpal.html">Return to top </a></p>
+            </div>
+           
+        </div>
+
+
+</html>

@@ -1,0 +1,124 @@
+.header_logo {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+    margin: 0;
+}
+
+.header_tag {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+    margin: 0rem;
+}
+
+h1 {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.04rem;
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+    margin: 0rem;
+}
+
+h3 {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+    margin: 0rem;
+}
+
+p, li, ul {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    list-style-type: none;
+    line-height: 1.5;
+    letter-spacing: 0.04rem;
+    margin-top: -0.2rem;
+}
+
+a {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+    transition: 0.3s ease ;
+}
+
+a img:hover, a img:focus {
+  transition: 0.3s ease;
+  opacity: 0.7;
+}
+
+a.header_logo {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.link {
+    font-weight: 600;
+}
+
+.paragraph-box {
+    margin-top: 2rem;
+}
+
+.project-description {
+    margin: .7rem 0rem 1.4rem 0rem;
+}
+
+/* PollenPal Modifier */
+
+.pollenpal {
+    font-family: "Nexa Text", sans-serif;
+}
+
+h1.pollenpal {
+    font-size: 7rem;
+    margin-left: -.6rem;
+    margin-bottom: -2rem;
+    padding: 0;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+/* Hudabes Modifier */
+
+.hudabes {
+    font-family: "Dogica", sans-serif;
+}
+
+h1.hudabes {
+    font-size: 4rem;
+    margin-top: 2rem;
+    margin-left: -.4rem;
+    padding: 0;
+    letter-spacing: -1rem;
+    line-height: 4rem;
+}

@@ -1,0 +1,543 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.project-template {
+    grid-template-areas: 
+        "header header header header header header header header header header header header"
+        "home home home home home home home home home home home home"
+        "projects projects projects projects projects projects projects projects projects projects projects projects"
+        "footer footer footer footer footer footer footer footer footer footer footer footer"
+    ;
+}
+
+.showcase-template {
+    grid-template-areas: 
+        "header header header header header header header header header header header header"
+        "content content content content content content content content content content content content"
+        "footer footer footer footer footer footer footer footer footer footer footer footer"
+    ;
+}
+
+.about-template {
+    grid-template-areas: 
+        "header header header header header header header header header header header header"
+        "about about about about about about about about about about about about"
+        "fun-facts fun-facts fun-facts fun-facts fun-facts fun-facts fun-facts fun-facts fun-facts fun-facts fun-facts fun-facts"
+        "contact contact contact contact contact contact contact contact contact contact contact contact"
+    ;
+}
+
+.container > div.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 2fr;
+    grid-template-areas: "logo tagline menu social-links";
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.container > div.header > div.logo {
+    grid-area: logo;
+}
+
+.container > div.header > div.tagline {
+    grid-area: tagline;
+}
+
+.container > div.header > div.menu {
+    grid-area: menu;
+}
+
+.container > div.header > div.social-links {
+    grid-area: social-links;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container > div.home {
+    grid-area: home;
+    grid-column: 1 / span 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 43vh;
+}
+
+.container > div.projects {
+    grid-area: projects;
+    grid-column: 5 / span 8;
+}
+
+.container > div.content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    grid-template-areas: 
+        "hero hero hero"
+        "hero-image hero-image hero-image"
+        "overview overview project-notes"
+        "wireframes wireframes wireframes"
+        "first-iteration first-problems first-problems"
+        "development-process development-process challenges"
+        "demos demos demos"
+        "future-prospects summary summary"
+    ;
+}
+
+.container > div.content > div.hero {
+    grid-area: hero;
+}
+
+.container > div.content > div.hero-image {
+    grid-area: hero-image;
+    margin: 2rem -1rem 2rem -1rem;
+}
+
+.container > div.content > div.overview {
+    grid-area: overview;
+    display: grid;
+    row-gap: 1rem;
+    padding-right: 7rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.container > div.content > div.project-notes {
+    grid-area: project-notes;
+    display: grid;
+    row-gap: 1rem;
+    grid-template-rows: 1fr 6fr;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.container > div.content > div.wireframes {
+    grid-area: wireframes;
+}
+
+.container > div.content > div.first-iteration {
+    grid-area: first-iteration;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    padding-right: 7rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.container > div.content > div.first-problems {
+    grid-area: first-problems;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+        "problem-header problem-header"
+        "problem-paragraphs problem-paragraphs"
+    ;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.container > div.content > div.first-problems > div.problem-header {
+    grid-area: problem-header;
+}
+
+.container > div.content > div.first-problems > div.problem-paragraphs {
+    grid-area: problem-paragraphs;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem;
+    padding-right: 7rem;
+}
+
+.container > div.content > div.development-process {
+    grid-area: development-process;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    padding-right: 7rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.container > div.content > div.challenges {
+    grid-area: challenges;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    padding-right: 7rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.container > div.content > div.demos {
+    grid-area: demos;
+}
+
+.container > div.content > div.future-prospects {
+    grid-area: future-prospects;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    padding-right: 7rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.container > div.content > div.summary {
+    grid-area: summary;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    padding-right: 7rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.container > div.about {
+    grid-area: about;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 4 / span 6;
+    margin-top: 7rem;
+}
+
+.container > div.fun-facts {
+    grid-area: fun-facts;
+    grid-column: 7 / span 3;
+    margin-top: 2rem;
+}
+
+.container > div.contact {
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    justify-content: flex-end;
+    height: 21rem;
+    grid-column: 7 / span 3;
+}
+
+.container > div.footer {
+    grid-area: footer;
+    margin-top: 3rem;
+}
+
+@media (max-width: 81rem) {
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project-template {
+        grid-template-areas: 
+            "header header header"
+            "home home home"
+            "projects projects projects"
+            "footer footer footer"
+        ;
+    }
+
+    .showcase-template {
+        grid-template-areas: 
+            "header header header"
+            "content content content"
+            "footer footer footer"
+        ;
+    }
+
+    .about-template {
+        grid-template-areas: 
+            "header header header"
+            "about about about"
+            "fun-facts fun-facts fun-facts"
+            "contact contact contact"
+        ;
+    }
+
+    .container > div.header {
+        grid-template-columns: 2fr 2fr 1fr 1fr;
+        margin-right: 0rem;
+    }
+
+    .container > div.header > div.social-links {
+        display: grid;
+        grid-column: 4 / span 1;
+    }
+
+    .container > div.home {
+        grid-column: 1 / span 1;
+    }
+
+    .container > div.projects {
+        grid-column: 2 / span 2;
+    }
+
+    .container > div.projects > a{
+        margin-bottom: 1rem;
+    }
+
+    .container > div.content {
+        grid-area: content;
+        grid-template-areas: 
+            "hero hero hero"
+            "hero-image hero-image hero-image"
+            "overview overview project-notes"
+            "wireframes wireframes wireframes"
+            "first-iteration first-problems first-problems"
+            "development-process development-process development-process"
+            "challenges challenges challenges"
+            "demos demos demos"
+            "future-prospects future-prospects future-prospects"
+            "summary summary summary"
+        ;
+    }
+
+    .container > div.content > div.overview {
+        grid-template-rows: 1fr;
+        row-gap: 1rem;
+        padding-right: 0rem;
+    }
+
+    .container > div.content > div.project-notes {
+        padding-right: 0rem;
+    }
+
+    .container > div.content > div.first-iteration {
+        grid-template-rows: 1fr 6fr;
+        padding-right: 0rem;
+    }
+
+    .container > div.content > div.first-problems {
+        grid-template-rows: 1fr 6fr;
+        padding-right: 0rem;
+    }
+
+    .container > div.content > div.first-problems > div.problem-paragraphs {
+        padding-right: 0rem;
+        gap: 1rem;
+    }
+
+    .container > div.content > div.development-process {
+        padding-right: 0rem;
+    }
+
+    .container > div.content > div.challenges {
+        grid-template-rows: 1fr;
+        row-gap: 1rem;
+        padding-right: 0rem;
+    }
+
+    .container > div.content > div.future-prospects {
+        grid-template-rows: 1fr;
+        row-gap:1rem;
+        padding-right: 0rem;
+    }
+
+    .container > div.content > div.summary {
+        padding-right: 0rem;
+    }
+
+    .container > div.about {
+        grid-template-columns: 1fr 2fr;
+        grid-column: 1 / span 3;
+    }
+
+    .container > div.fun-facts {
+        grid-area: fun-facts;
+        grid-column: 2 / span 2;
+        margin-top: 2rem;
+    }
+
+    .container > div.contact {
+        justify-self: start;
+        grid-column: 2 / span 1;
+    }
+}
+
+@media (max-width: 54rem) {
+        .container {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .project-template {
+        grid-template-areas: 
+            "header header"
+            "home home"
+            "projects projects"
+            "footer footer"
+        ;
+    }
+
+    .showcase-template {
+        grid-template-areas: 
+            "header header"
+            "content content"
+            "footer footer"
+        ;
+    }
+
+    .about-template {
+        grid-template-areas: 
+            "header header"
+            "about about"
+            "fun-facts fun-facts"
+            "contact contact"
+        ;
+    }
+
+    .container > div.header {
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+            "logo menu"
+            "tagline social-links"
+        ;
+        margin-right: 0rem;
+        column-gap: 1.5rem;
+    }
+
+    .container > div.header > div.social-links {
+        grid-column: 2 / span 1;
+        justify-content: start;
+
+    }
+
+    .container > div.home {
+        grid-column: 1 / span 2;
+    }
+
+    .container > div.projects {
+        grid-column: 1 / span 2;
+    }
+
+    .container > div.content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "hero hero "
+            "hero-image hero-image"
+            "overview overview"
+            "project-notes project-notes"
+            "wireframes wireframes"
+            "first-iteration first-iteration"
+            "first-problems first-problems"
+            "development-process development-process"
+            "challenges challenges"
+            "demos demos"
+            "future-prospects future-prospects"
+            "summary summary"
+        ;
+    }
+
+    .container > div.content > div.overview {
+        grid-column: 1 / span 2;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .container > div.content > div.project-notes {
+        row-gap: 1rem;
+        grid-template-rows: 1fr 6fr;
+        grid-column: 1 / span 2;
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+    }
+
+    .container > div.content > div.wireframes {
+        margin-top: -5rem;
+    }
+
+    .container > div.content > div.first-iteration {
+        grid-template-rows: 1fr 6fr;
+        padding-right: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 0rem;
+    }
+
+    .container > div.content > div.first-iteration > h2 {
+        padding-bottom: 1rem;
+    }
+
+    .container > div.content > div.first-problems {
+        grid-template-rows: 1fr 6fr;
+        padding-right: 0rem;
+        grid-column: 1 / span 2;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .container > div.content > div.first-problems > div.problem-paragraphs {
+        padding-right: 0rem;
+        gap: 1rem;
+    }
+
+    .container > div.content > div.development-process {
+        padding-right: 0rem;
+        margin-top: 4rem;
+        margin-bottom: 0rem;
+    }
+
+    .container > div.content > div.challenges {
+        grid-template-rows: 1fr;
+        row-gap: 1rem;
+        padding-right: 0rem;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .container > div.content > div.future-prospects {
+        grid-template-rows: 1fr;
+        row-gap:1rem;
+        padding-right: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 0rem;
+    }
+
+    .container > div.content > div.summary {
+        padding-right: 0rem;
+        margin-top: 4rem;
+        margin-bottom: 7rem;
+    }
+
+    .container > div.about {
+        grid-template-columns: 1fr 2fr;
+        grid-column: 1 / span 2;
+        margin-top: 2rem;
+    }
+
+    .container > div.fun-facts {
+        grid-area: fun-facts;
+        grid-template-columns: 1fr 2fr;
+        grid-column: 2;
+        margin-top: 2rem;
+    }
+
+    .container > div.contact {
+        justify-self: start;
+        grid-column: 2 / span 1;
+    }
+
+    .container > div.footer {
+        justify-content: end;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    h1.pollenpal {
+        font-size: 3.5rem;
+        letter-spacing: -.1rem;
+    }
+
+    h1.hudabes {
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-left: -.4rem;
+        padding: 0;
+        letter-spacing: -.5rem;
+    }
+}

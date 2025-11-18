@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gordon Yen Portfolio</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/font.css">
+    </head>
+
+    <body>
+        <div class="container showcase-template">
+
+            <div class="header">
+                <div class="logo"><a href="index.html" class="header_logo">Gordon Yen</a></div>
+                <div class="header_tag tagline">Portfolio __ PollenPal</div>
+
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" class="link">Projects</a></li>
+                            <li><a href="about.html" class="link">Information</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/gordon-yen-5ab8562a9/" class="link">__LinkedIn</a>
+                </div>
+            </div>
+            
+            <div class="content">
+
+                <div class="hero">
+                    <h1 class="pollenpal">PollenPal</h1>
+                </div>
+
+                <div class="hero-image">
+                    <img src="img/PollenPalBanner.jpg" alt="PollenPal Icons on Phone Mockups">
+                </div>
+
+                <div class="overview">
+                    <h2>Overview</h2>
+                    <p>PollenPal is an allergy management app designed to empower users to track and minimize their exposure to seasonal allergies. By enabling users to anticipate high-risk days and take preventive action, PollenPal helps them stay ahead of allergy symptoms.The objective is to give users timely, location-based pollen forecasts to help them plan their day and reduce exposure to allergy triggers. Allergy sufferers can be caught unprepared by changing pollen levels. Our app solves that with real-time forecasts and accessible, visual insights. </p>
+                    <p>This is a two person school project, and was inspired by my partner's personal experiences with seasonal allergies. She found herself frequently affected by unexpected changes in pollen levels, and we realized there were not many mobile tools designed specifically to help allergy sufferers manage their symptoms in real-time. That need formed the foundation for PollenPal's purpose and feature set.</p>
+                </div>
+
+                <div class="project-notes">
+                    <div>
+                        <h3>Role</h3>
+                        <p>Back-end Developer</p>
+                    </div>
+                    <div>
+                        <h3>Skills</h3>
+                        <ul>
+                            <li>React Native</li>
+                            <li>Expo</li>
+                            <li>Firebase</li>
+                            <li>Node.js</li>
+                            <li>Google Maps Platform API</li>
+                        </ul>
+                    </div>  
+                </div>
+
+                <div class="wireframes">
+                    <img src="img/pollenpalwireframes.jpg" alt="PollenPal Wireframes">
+                </div>
+
+                <div class="first-iteration">
+                    <h2>First Iteration</h2>
+                    <p>In the initial phase of development, we focused on creating a prototype that shows how core features such as location-based pollen forecasts and pollen database would be displayed. The first iteration allowed us to visualize our concept and make sure we are on the same page.</p>
+                </div>
+
+                <div class="first-problems">
+                    <div class="problem-header">
+                        <h2>Problems</h2>
+                    </div>
+                    <div class="problem-paragraphs">
+                        <p>The biggest problem with this iteration is that the response that are recieved from the API was not as precise as we thought. For example, while having separate pollen levels in each region for specific plants was sometimes available, it was inconsistent and not viable for us to implement, especially with our time constraints.</p>
+                        <p>One of the biggest changes to the interface will be the way in which pollen levels are displayed. The levels of pollen were not given in a quantitative measurement like grains per cubic metre, they are measured on a scale of 0-5: 0 being little to no pollen in the air, and 5 being extremely high pollen levels. So, the specific measurements are omitted, and the line graph is redundant, making the interface a lot more simple.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="development-process">
+                    <h2>Development Process</h2>
+                    <p>The main bulk of this project was working with the structured data from Google's APIs and the implementation of Firebase. I wrote logic to extract the relevant pieces of information from the Pollen API and the Google Maps API, convert them into plain, human-readable content, and then connect them to the visual components of the app. I also supplemented that with functions to help generate additional insight into the information retrieved from the API. Alongside this, implementing Firebase Authentication and database allows users to create and manage accounts, as well as access a database of in depth information on regional pollinator plants. I also supported frontend integration by helping wire backend logic to the interface my partner developed.</p>
+                </div> 
+
+                <div class="challenges">
+                    <h2>Challenges</h2>
+                    <p>The most challenging part of the project was coming up with a way to parse the data retrieved from the API. It took a lot of trial and error to write code that will properly extract the needed data from the api response and converting it to something that the app can display without any errors. As this was my first mobile app project, I had to learn React Native, Firebase integration, and API workflows from scratch. The learning curve was steep, but incredibly rewarding.</p>
+                </div>
+
+                <div class="demos">
+
+                    <!-- https://www.w3schools.com/tags/ref_av_dom.asp -->
+                    <!-- https://www.w3schools.com/tags/att_video_loop.asp -->
+                    
+                    <video loop autoplay muted class="video">
+                        <source src="video/Demo1.mp4" type="video/mp4" alt="PollenPal Demo of Onboarding and Home Screen">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <video loop autoplay muted class="video">
+                        <source src="video/Demo2.mp4" type="video/mp4" alt="PollenPal Demo of Heat Map and Pollen Database">
+                        Your browser does not support the video tag.
+                    </video>            
+                </div>
+
+                <div class="future-prospects">
+                    <h2>Future Prospects</h2>
+                    <p>If we had more time, I think I would have liked to add push notifications and alerts, similar to a daily alarm or a daily weather update in the morning. In terms of the less functional aspects, I think implementing some sound effects throughout the app and to accompany the Pal to make it feel more personable and alive. In the same vein, adding the ability to customize the pal could add a playful aspect to the app.</p>
+                </div>
+
+                <div class="summary">
+                    <h2>Summary</h2>
+                    <p>We delivered a fully functional prototype of PollenPal. It provides users with real-time pollen forecasts based on their location in a clean, intuitive interface. The app is reliable and lays the foundation for future features like push notifications and advanced personalization. From a personal perspective, this project gave me practical mobile application development experience. I learned a lot and improved my skills in backend development, data handling, mobile UI logic, and working closely with a teammate in a collaborative environment.</p>
+                </div>
+
+            <div class="footer">
+                <p><a href="pollenpal.html">Return to top </a></p>
+            </div>
+           
+        </div>
+
+
+</html>
