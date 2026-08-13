@@ -40,8 +40,8 @@
 .container > div.header {
     grid-area: header;
     display: grid;
-    grid-template-columns: 3fr 2fr 2fr 2fr;
-    grid-template-areas: "logo tagline menu social-links";
+    grid-template-columns: 3fr 4fr 2fr;
+    grid-template-areas: "logo tagline social-links";
     gap: 1rem;
     margin-bottom: 4rem;
 }
@@ -117,7 +117,6 @@
     grid-area: project-notes;
     display: grid;
     row-gap: 1rem;
-    grid-template-rows: 1fr 6fr;
     margin-top: 7rem;
     margin-bottom: 7rem;
 }
@@ -390,17 +389,15 @@
     }
 
     .container > div.header {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 5fr 1fr 1fr;
         grid-template-areas: 
-            "logo menu"
-            "tagline social-links"
+            "logo tagline social-links"
         ;
         margin-right: 0rem;
         column-gap: 1.5rem;
     }
 
     .container > div.header > div.social-links {
-        grid-column: 2 / span 1;
         justify-content: start;
 
     }
@@ -523,6 +520,10 @@
         justify-content: end;
         display: flex;
         justify-content: flex-end;
+    }
+
+    h1.borins {
+        font-size: 3.5rem;
     }
 
     h1.pollenpal {
