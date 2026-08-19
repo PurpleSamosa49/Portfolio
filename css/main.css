@@ -134,3 +134,12 @@ h1.hudabes {
     letter-spacing: -1rem;
     line-height: 4rem;
 }
+
+@media (max-width: 54rem) {
+    .header_tag {
+        font-size: 1rem;
+    }   
+    p, li, ul {
+        font-size: 0.7rem;
+    }
+}
