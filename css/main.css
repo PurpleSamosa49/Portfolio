@@ -1,6 +1,10 @@
+html {
+    font-size: clamp(1rem, 0.8vw + 0.21rem, 1.7rem);
+}
+
 .header_logo {
     font-family: 'Aileron', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.07rem;
     margin: 0;
@@ -8,7 +12,7 @@
 
 .header_tag {
     font-family: 'Aileron', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.07rem;
     margin: 0rem;
@@ -30,7 +34,7 @@ h2 {
     letter-spacing: 0.04rem;
     margin: 0rem;
     align-self: flex-end;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 h3 {
@@ -39,9 +43,21 @@ h3 {
     font-weight: 600;
     letter-spacing: 0.04rem;
     margin: 0rem;
+    padding-bottom: 1rem;
 }
 
-p, li, ul {
+p {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    list-style-type: none;
+    line-height: 1.5;
+    letter-spacing: 0.04rem;
+    margin-top: -0.2rem;
+    margin-bottom: 1rem;
+}
+
+li, ul {
     font-family: 'Aileron', sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -80,6 +96,10 @@ img {
     height: auto;
 }
 
+.showcase-img {
+    padding: 0rem 0 1rem 0;
+}
+
 .link {
     font-weight: 600;
 }
@@ -95,7 +115,7 @@ img {
 /* Borins Modifier */
 h1.borins {
     font-family: 'IBM Plex Mono', sans-serif;
-    font-size: 7rem;
+    font-size: 3rem;
     font-weight: 500;
     margin-bottom: -2rem;
     padding: 0;
@@ -108,7 +128,7 @@ h1.borins {
 }
 
 h1.pollenpal {
-    font-size: 7rem;
+    font-size: 4rem;
     margin-left: -.6rem;
     margin-bottom: -2rem;
     padding: 0;
@@ -117,6 +137,8 @@ h1.pollenpal {
 video {
     width: 100%;
     height: auto;
+    padding: 0.5rem 0 1.5rem 0;
+    clip-path: inset(0px 10px 0px 10px);
 }
 
 /* Hudabes Modifier */
@@ -126,11 +148,11 @@ video {
 }
 
 h1.hudabes {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 2rem;
     margin-left: -.4rem;
     margin-bottom: -2rem;
     padding: 0;
-    letter-spacing: -1rem;
+    letter-spacing: -0.7rem;
     line-height: 4rem;
 }
