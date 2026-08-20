@@ -14,7 +14,6 @@
 .project-template {
     grid-template-areas: 
         "header header"
-        "home home"
         "projects projects"
         "footer footer"
     ;
@@ -31,6 +30,7 @@
 .container > div.header {
     grid-area: header;
     display: grid;
+    width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "logo work info";
     gap: 1rem;
@@ -50,18 +50,9 @@
     justify-self: end;
 }
 
-.container > div.home {
-    grid-area: home;
-    grid-column: 1 / span 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 43vh;
-}
-
 .container > div.projects {
     grid-area: projects;
-    grid-column: 2 / span 2;
+    grid-column: 2 / span 1;
 }
 
 /* Showcase Content Stuff */

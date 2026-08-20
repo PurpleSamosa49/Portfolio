@@ -20,8 +20,8 @@ html {
 
 h1 {
     font-family: 'Aileron', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 3.4rem;
+    font-weight: 200;
     letter-spacing: 0.04rem;
     margin: 0;
     padding-bottom: 1rem;
@@ -149,6 +149,7 @@ video {
 
 h1.hudabes {
     font-size: 3rem;
+    font-weight: 600;
     margin-top: 2rem;
     margin-left: -.4rem;
     margin-bottom: -2rem;
