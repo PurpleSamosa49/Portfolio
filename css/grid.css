@@ -162,6 +162,11 @@ div.contact {
         margin-top: 34vw;
     }
 
+    .container > div.projects .project-nametag {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+    }
+
     .container > div.content {
         grid-template-columns: 1fr;
         grid-template-areas: 
