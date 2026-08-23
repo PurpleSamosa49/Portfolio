@@ -43,7 +43,11 @@
                             <li>CSS</li>
                             <li>Javascript</li>
                         </ul>
-                    </div>  
+                    </div>
+                    <div style="margin-top: 2.1rem;">
+                        <h2>Link</h2>
+                        <a href="https://borins.ca/" target="_blank" rel="noopener" style="font-weight: 400">https://borins.ca/ <span class="link-arrow">↪</span></a>
+                    </div>
                 </div>
 
                 <div class="showcase-content">
@@ -54,14 +58,30 @@
                         <p>I was hired as a freelancer to help finish developing their website. Originally, it was done with no experience through AI services like Claude. However, because they ran into roadblocks with gaps in coding knowledge, implementing proper accessibility, and scaling. The goal was to get a finished product that works on desktop, tablet, and mobile devices with proper considerations for use with aids meant to help the visually impaired navigate the website.</p>
                     </div>
 
-                    <div>
-                        <img src="img/BorinsBanner.jpg" alt="Screen Captures of Borins & Company Website" class="showcase-img">
+                    <div class="carousel-wrapper">
+                        <ul class="carousel-box">
+                            <li data-accName="Item 1" class="carousel-item">
+                                <img src="img/BorinsCarousel_1.jpg" alt="Screen Capture of Borins & Company Website" class="showcase-img">
+                            </li>
+                            <li data-accName="Item 2" class="carousel-item">
+                                <img src="img/BorinsCarousel_2.jpg" alt="Screen Capture of Borins & Company Website" class="showcase-img">
+                            </li>
+                            <li data-accName="Item 3" class="carousel-item">
+                                <img src="img/BorinsCarousel_3.jpg" alt="Screen Capture of Borins & Company Website" class="showcase-img">
+                            </li>
+                            <li data-accName="Item 4" class="carousel-item">
+                                <img src="img/BorinsCarousel_4.jpg" alt="Screen Capture of Borins & Company Website" class="showcase-img">
+                            </li>
+                            <li data-accName="Item 5" class="carousel-item">
+                                <img src="img/BorinsCarousel_5.jpg" alt="Screen Capture of Borins & Company Website" class="showcase-img">
+                            </li>
+                        </ul>
+                        <button class="carousel-button carousel-button-left" type="button" aria-label="Previous carousel item"></button>
+                        <button class="carousel-button carousel-button-right" type="button" aria-label="Next carousel item"></button>
                     </div>
+                    <p class="carousel-counter" aria-live="polite">1/5</p>
+                    
 
-                    <div>
-                        <h2>Visit the website</h2>
-                        <p><a href="https://borins.ca/" target="_blank" rel="noopener" style="font-weight: 400">https://borins.ca/</a></p>
-                    </div>
                 </div>
 
             </div>  
@@ -72,4 +92,7 @@
            
         </div>
 
+        <script src="js/carousel.js"></script>
+
+        
 </html>
