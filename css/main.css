@@ -95,10 +95,12 @@ ul.carousel-box {
 
 .carousel-button-left {
     left: 0;
+    cursor: url("../img/CarouselPointerLeft.png") 27 27, pointer;
 }
 
 .carousel-button-right {
     right: 0;
+    cursor: url("../img/CarouselPointerRight.png") 27 27, pointer;
 }
 
 .carousel-button:focus-visible {
