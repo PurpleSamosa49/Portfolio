@@ -193,4 +193,8 @@ div.contact {
         letter-spacing: -.7rem;
     }
 
+    .link-arrow {
+    transform: translateY(0rem);
+}
+
 }
