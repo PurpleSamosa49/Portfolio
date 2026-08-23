@@ -58,6 +58,7 @@
 .container > div.projects .project-nametag {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    margin-bottom: 3.4rem;
 }
 
 /* Showcase Content Stuff */
@@ -200,7 +201,7 @@ div.contact {
     }
 
     .link-arrow {
-    transform: translateY(0rem);
+    transform: translateY(-0.04rem);
 }
 
 }
