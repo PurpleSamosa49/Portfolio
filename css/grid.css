@@ -113,8 +113,9 @@ div.contact {
 
 
 @media (max-width: 54rem) {
-        .container {
+    .container {
         grid-template-columns: 1fr 2fr;
+        padding-bottom: 3rem;
     }
 
     .project-template {
