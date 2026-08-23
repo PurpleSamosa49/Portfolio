@@ -55,6 +55,11 @@
     grid-column: 2 / span 1;
 }
 
+.container > div.projects .project-nametag {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
 /* Showcase Content Stuff */
 
 .container > div.content {
@@ -71,9 +76,12 @@
 
 .container > div.content > div.showcase-header {
     grid-area: showcase-header;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: auto;
+    height: 30vh;
     margin-bottom: 4rem;
+    justify-content: flex-end;
 }
 
 .container > div.content > div.sidebar {
@@ -100,7 +108,6 @@ div.contact {
 .container > div.footer {
     grid-area: footer;
     margin-top: 3rem;
-    margin-bottom: -1rem;
     padding-bottom: 0;
 }
 
@@ -151,6 +158,7 @@ div.contact {
 
     .container > div.projects {
         grid-column: 1 / span 2;
+        margin-top: 34vw;
     }
 
     .container > div.content {

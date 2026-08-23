@@ -1,40 +1,32 @@
 html {
-    font-size: clamp(1rem, 0.8vw + 0.21rem, 1.7rem);
-}
-
-.header_logo {
-    font-family: 'Aileron', sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 0.07rem;
-    margin: 0;
+    font-size: clamp(0.7rem, 0.8vw + 0.31rem, 1.7rem);
 }
 
 .header_tag {
     font-family: 'Aileron', sans-serif;
     font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 0.07rem;
+    font-weight: 400;
+    letter-spacing: 0.04rem;
     margin: 0rem;
 }
 
 h1 {
     font-family: 'Aileron', sans-serif;
-    font-size: 3.4rem;
-    font-weight: 200;
-    letter-spacing: 0.04rem;
-    margin: 0;
-    padding-bottom: 1rem;
+    font-size: 3.1rem;
+    font-weight: 400;
+    letter-spacing: -0.05rem;
+    padding: 0;
+    margin-bottom: -2rem;
+    margin-left: -0.28rem;
 }
 
 h2 {
     font-family: 'Aileron', sans-serif;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 0.04rem;
-    margin: 0rem;
+    margin-bottom: .7rem;
     align-self: flex-end;
-    padding-bottom: 0.5rem;
 }
 
 h3 {
@@ -54,10 +46,19 @@ p {
     line-height: 1.5;
     letter-spacing: 0.04rem;
     margin-top: -0.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2.1rem;
 }
 
-li, ul {
+span {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    list-style-type: none;
+    line-height: 1.5;
+    letter-spacing: 0.04rem;
+}
+
+ul {
     font-family: 'Aileron', sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -65,12 +66,14 @@ li, ul {
     line-height: 1.5;
     letter-spacing: 0.04rem;
     margin-top: -0.2rem;
+    
 }
 
 a {
     font-family: 'Aileron', sans-serif;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
+    letter-spacing: 0.04rem;
     text-decoration: none;
     color: #000;
     cursor: pointer;
@@ -109,27 +112,29 @@ img {
 }
 
 .project-description {
-    margin: .7rem 0rem 1.4rem 0rem;
+    margin: 0rem 0rem 3.4rem 0rem;
 }
 
-/* Borins Modifier */
-h1.borins {
-    font-family: 'IBM Plex Mono', sans-serif;
-    font-size: 3rem;
-    font-weight: 500;
-    margin-bottom: -2rem;
-    padding: 0;
+.date {
+    justify-self: flex-end;
 }
+
+.link-arrow {
+    display: inline-block;
+    transform: translateY(0.11rem);
+}
+
+/* ////////////////// */
+/*   Font Modifiers   */
+/* ////////////////// */
 
 /* PollenPal Modifier */
 
-.pollenpal {
-    font-family: "Nexa Text", sans-serif;
-}
-
 h1.pollenpal {
-    font-size: 4rem;
-    margin-left: -.6rem;
+    font-family: "Nexa Text", sans-serif;
+    font-weight: 400;
+    font-size: 3.1rem;
+    margin-left: -.25rem;
     margin-bottom: -2rem;
     padding: 0;
 }
@@ -148,12 +153,16 @@ video {
 }
 
 h1.hudabes {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 600;
-    margin-top: 2rem;
     margin-left: -.4rem;
     margin-bottom: -2rem;
     padding: 0;
     letter-spacing: -0.7rem;
     line-height: 4rem;
 }
+
+/* ////////////////// */
+/*     Javascript     */
+/* ////////////////// */
+
